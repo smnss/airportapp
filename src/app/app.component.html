@@ -1,0 +1,21 @@
+<app-header></app-header>
+
+<div class="container-fluid" id="routerOutlet">
+<div [hidden]="!loading">
+    <div id="wrap">
+    <div class="loading-indicator" >
+    <svg viewBox="0 0 120 120" class="loading">
+      <circle class="loading-circle loading-base" r="57.32" cx="60" cy="60"></circle>
+    </svg>
+  </div>
+      <div id="globe">
+        <div id="plane"></div>
+      </div>
+    </div>  
+</div>
+<div [hidden]="loading" class="router-output">
+  <router-outlet></router-outlet>
+</div>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,22 @@
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Favorite food" value="Sushi">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <textarea matInput placeholder="Leave a comment"></textarea>
+  </mat-form-field>
+</form>
+<button (click)="getTest()">Get</button>
+<button (click)="postTest()">Post</button>
+<button (click)="putTest()">Put</button>
+<button (click)="deletTest()">Del</button>
+
+<button (click)="ngxSmartModalService.getModal('myModal').open()">Open myModal</button>
+
+<ngx-smart-modal #myModal identifier="myModal">
+  <h1>Title</h1>
+  <p>Some stuff...</p>
+
+  <button (click)="myModal.close()">Close</button>
+</ngx-smart-modal>

@@ -1,0 +1,93 @@
+<nav class="navbar navbar-expand navbar-light fixed-top" style="background-color:#039be5">
+    <a class="navbar-brand pacifico text-white" routerLink="/">
+        <span class="logo">✈️</span>
+         <span class="d-none d-md-inline brand">
+            <span>A</span>
+            <span>i</span>
+            <span>r</span>
+            <span>p</span>
+            <span>o</span>
+            <span>r</span>
+            <span>t</span>
+            <span>&nbsp;</span>
+            <span>A</span>
+            <span>p</span>
+            <span>p</span>
+        </span>
+    </a>
+    <div class="navbar-collapse collapse justify-content-center" id="navbar5">
+        <input type="text" class="form-control search-box w-50 mr-5" placeholder="Search Airport"  [matAutocomplete]="auto" [formControl]="myControl">
+        <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let option of filteredOptions | async" [value]="option" (onSelectionChange)="gotoAirport($event)">
+                <mat-toolbar>
+                    <img class="example-option-img" aria-hidden src="../../../../assets/logo.png" height="30">
+                    <small> {{option}} </small>
+                    
+                </mat-toolbar>
+            </mat-option>
+        </mat-autocomplete>
+        
+    </div>
+    <span class="navbar-text small text-truncate mt-1 text-right order-1 order-md-last">
+        <a class="nav-link" id="userDetails" data-target="#" mat-icon-button routerLink="." data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="material-icons">
+                more_vert
+            </i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="userDetails">
+            <li [routerLinkActive]="['active']">
+                <a class="dropdown-item" [routerLink]="['user']">
+                    <i class="material-icons">
+                        perm_contact_calendar
+                    </i> &nbsp;Profile
+                </a>
+                <div class="dropdown-divider"></div>
+            </li>
+            <li [routerLinkActive]="['active']">
+                <a class="dropdown-item" [routerLink]="[]" (click)="ngxSmartModalService.getModal('myModal').open()">
+                    <i class="material-icons">
+                        vpn_key
+                    </i> &nbsp;Login
+                </a>
+                <div class="dropdown-divider"></div>
+            </li>
+            <li [routerLinkActive]="['active']">
+                <a class="dropdown-item" [routerLink]="['']">
+                    <i class="material-icons text-danger">
+                        power_settings_new
+                    </i> &nbsp;Logout
+                </a>
+            </li>
+        </ul>
+    </span>
+</nav>
+
+<ngx-smart-modal #myModal identifier="myModal" >
+      <div class="parentcontainer">
+        <form class="authendication">
+                <input checked id='signin' name='action' type='radio' value='signin'>
+                <label for='signin'>Sign in</label>
+                <input id='signup' name='action' type='radio' value='signup'>
+                <label for='signup'>Sign up</label>
+                <input id='reset' name='action' type='radio' value='reset'>
+                <label for='reset'>Reset</label>
+                <div id='wrapper'>
+                  <div id='arrow'></div>
+                  <input id='email' placeholder='Email' type='text'>
+                  <input id='pass' placeholder='Password' type='password'>
+                  <input id='repass' placeholder='Repeat password' type='password'>
+                </div>
+                <button type='submit'>
+                  <span>
+                    Reset password
+                    <br>
+                    Sign in
+                    <br>
+                    Sign up
+                  </span>
+                </button>
+              </form>
+  
+</div>
+      </ngx-smart-modal>

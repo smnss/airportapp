@@ -1,0 +1,416 @@
+<div class="container profile-container pt-3">
+  <div class="content">
+    <div class="profile-card">
+      <div class="firstinfo">
+        <img src="https://bootdey.com/img/Content/avatar/avatar6.png" />
+        <div class="profileinfo">
+          <h1>My name</h1>
+          <h3>
+            <mat-icon aria-label="Location">location_on</mat-icon>Trichy, India</h3>
+          <p class="bio">Why not travel around the world on your gap year with Gap 360? </p>
+        </div>
+      </div>
+    </div>
+    <div class="badgescard">
+      <span>12 Aug 2018, 10:53 PM</span>
+    </div>
+  </div>
+  <mat-card class="history-card mt-5">
+    <mat-card-header class="d-flex justify-content-between">
+      <mat-card-title>Traval plan </mat-card-title>
+
+      <button mat-mini-fab matTooltip="Create Travel plan" matTooltip="Create plan" color="primary" class="_mt-15" (click)="openBottomSheet()">
+        <i class="material-icons">add</i>
+      </button>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content class="mt-2">
+      <mat-list>
+        <mat-list-item class="odd-index">
+          <span class="backgroundIcon">
+            <i class="material-icons">
+              flight_takeoff
+            </i>
+          </span>
+          <p class="border-left-0 border border-primary  location text-info col-md-3">Chennai, TamilNadu</p>
+          <img src="../../../../assets/flight-route.png" width="100" />
+          <span class="backgroundIcon">
+            <i class="material-icons">
+              flight_land
+            </i>
+          </span>
+          <p class="border-left-0 border border-primary  location col-md-3 text-info"> Trichy, TamilNadu </p>
+          <i class="material-icons">
+            date_range
+          </i>
+          <p class="location col-md-2 text-muted"> 25 Sep 2018 </p>
+          <div class="d-flex justify-content-center w-100">
+            <button mat-icon-button color="primary" matTooltip="Edit plan" (click)="openBottomSheet()">
+              <mat-icon aria-label="Edit border-left-0 border border-primary  location">edit_location</mat-icon>
+            </button>
+            <button mat-icon-button color="warn" matTooltip="Delete travel plan">
+              <mat-icon aria-label="Delete travel plan">delete_forever</mat-icon>
+            </button>
+          </div>
+        </mat-list-item>
+
+        <mat-list-item class="even-index">
+            <span class="backgroundIcon">
+              <i class="material-icons">
+                flight_takeoff
+              </i>
+            </span>
+            <p class="border-left-0 border border-primary  location text-info col-md-3">Trichy, TamilNadu</p>
+            <img src="../../../../assets/flight-route.png" width="100" />
+            <span class="backgroundIcon">
+              <i class="material-icons">
+                flight_land
+              </i>
+            </span>
+            <p class="border-left-0 border border-primary  location col-md-3 text-info"> Chennai, TamilNadu </p>
+            <i class="material-icons">
+              date_range
+            </i>
+            <p class="location col-md-2 text-muted"> 26 Sep 2018 </p>
+            <div class="d-flex justify-content-center w-100">
+              <button mat-icon-button color="primary" matTooltip="Edit plan" (click)="openBottomSheet()">
+                <mat-icon aria-label="Edit border-left-0 border border-primary  location">edit_location</mat-icon>
+              </button>
+              <button mat-icon-button color="warn" matTooltip="Delete travel plan">
+                <mat-icon aria-label="Delete travel plan">delete_forever</mat-icon>
+              </button>
+            </div>
+          </mat-list-item>
+
+          <mat-list-item class="odd-index">
+              <span class="backgroundIcon">
+                <i class="material-icons">
+                  flight_takeoff
+                </i>
+              </span>
+              <p class="border-left-0 border border-primary  location text-info col-md-3">Chennai, TamilNadu</p>
+              <img src="../../../../assets/flight-route.png" width="100" />
+              <span class="backgroundIcon">
+                <i class="material-icons">
+                  flight_land
+                </i>
+              </span>
+              <p class="border-left-0 border border-primary  location col-md-3 text-info"> Changi, Singapore </p>
+              <i class="material-icons">
+                date_range
+              </i>
+              <p class="location col-md-2 text-muted"> 30 Sep 2018 </p>
+              <div class="d-flex justify-content-center w-100">
+                <button mat-icon-button color="primary" matTooltip="Edit plan" (click)="openBottomSheet()">
+                  <mat-icon aria-label="Edit border-left-0 border border-primary  location">edit_location</mat-icon>
+                </button>
+                <button mat-icon-button color="warn" matTooltip="Delete travel plan">
+                  <mat-icon aria-label="Delete travel plan">delete_forever</mat-icon>
+                </button>
+              </div>
+            </mat-list-item>
+
+            <mat-list-item class="even-index">
+                <span class="backgroundIcon">
+                  <i class="material-icons">
+                    flight_takeoff
+                  </i>
+                </span>
+                <p class="border-left-0 border border-primary  location text-info col-md-3">Changi, Singapore</p>
+                <img src="../../../../assets/flight-route.png" width="100" />
+                <span class="backgroundIcon">
+                  <i class="material-icons">
+                    flight_land
+                  </i>
+                </span>
+                <p class="border-left-0 border border-primary  location col-md-3 text-info"> Trichy, TamilNadu </p>
+                <i class="material-icons">
+                  date_range
+                </i>
+                <p class="location col-md-2 text-muted"> 30 Sep 2018 </p>
+                <div class="d-flex justify-content-center w-100">
+                  <button mat-icon-button color="primary" matTooltip="Edit plan" (click)="openBottomSheet()">
+                    <mat-icon aria-label="Edit border-left-0 border border-primary  location">edit_location</mat-icon>
+                  </button>
+                  <button mat-icon-button color="warn" matTooltip="Delete travel plan">
+                    <mat-icon aria-label="Delete travel plan">delete_forever</mat-icon>
+                  </button>
+                </div>
+              </mat-list-item>
+
+              <mat-list-item class="odd-index">
+                  <span class="backgroundIcon">
+                    <i class="material-icons">
+                      flight_takeoff
+                    </i>
+                  </span>
+                  <p class="border-left-0 border border-primary  location text-info col-md-3">Trichy, TamilNadu</p>
+                  <img src="../../../../assets/flight-route.png" width="100" />
+                  <span class="backgroundIcon">
+                    <i class="material-icons">
+                      flight_land
+                    </i>
+                  </span>
+                  <p class="border-left-0 border border-primary  location col-md-3 text-info"> Chennai, TamilNadu </p>
+                  <i class="material-icons">
+                    date_range
+                  </i>
+                  <p class="location col-md-2 text-muted"> 10 Oct 2018 </p>
+                  <div class="d-flex justify-content-center w-100">
+                    <button mat-icon-button color="primary" matTooltip="Edit plan" (click)="openBottomSheet()">
+                      <mat-icon aria-label="Edit border-left-0 border border-primary  location">edit_location</mat-icon>
+                    </button>
+                    <button mat-icon-button color="warn" matTooltip="Delete travel plan">
+                      <mat-icon aria-label="Delete travel plan">delete_forever</mat-icon>
+                    </button>
+                  </div>
+                </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="graph-card mt-3">
+    <mat-card-header class="d-flex justify-content-between">
+      <mat-card-title>Traval History</mat-card-title>
+      <mat-select class="year-select" [(value)]="selected">
+        <mat-option value="2018">2018</mat-option>
+        <mat-option value="2017">2017</mat-option>
+        <mat-option value="2016">2016</mat-option>
+        <mat-option value="2015">2015</mat-option>
+        <mat-option value="2014">2014</mat-option>
+      </mat-select>
+
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content class="mt-5">
+      <p>
+        <app-travel-history-graph></app-travel-history-graph>
+      </p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="history-card mt-3">
+    <mat-card-header>
+      <mat-card-title>
+        Traval History on
+      </mat-card-title>
+      <h4>2018</h4>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content class="mt-2">
+      <mat-list>
+        <mat-list-item class="odd-index">
+          <span class="backgroundIcon">
+            <i class="material-icons">
+              flight_takeoff
+            </i>
+          </span>
+          <p class="border-left-0 border border-primary  location  text-muted col-md-4">Chennai, TamilNadu</p>
+          <img src="../../../../assets/flight-route.png" width="100" />
+          <span class="backgroundIcon">
+            <i class="material-icons">
+              flight_land
+            </i>
+          </span>
+          <p class="border-left-0 border border-primary  location col-md-4 text-muted"> Trichy, TamilNadu </p>
+
+          <i class="material-icons">
+            date_range
+          </i>
+
+          <p class="location col-md-2 text-muted"> 15 Jul 2018 </p>
+        </mat-list-item>
+        <mat-list-item class="even-index">
+            <span class="backgroundIcon">
+              <i class="material-icons">
+                flight_takeoff
+              </i>
+            </span>
+            <p class="border-left-0 border border-primary  location  text-muted col-md-4">Chennai, TamilNadu</p>
+            <img src="../../../../assets/flight-route.png" width="100" />
+            <span class="backgroundIcon">
+              <i class="material-icons">
+                flight_land
+              </i>
+            </span>
+            <p class="border-left-0 border border-primary  location col-md-4 text-muted"> Trichy, TamilNadu </p>
+  
+            <i class="material-icons">
+              date_range
+            </i>
+  
+            <p class="location col-md-2 text-muted"> 15 Jul 2018 </p>
+          </mat-list-item>
+          <mat-list-item class="odd-index">
+              <span class="backgroundIcon">
+                <i class="material-icons">
+                  flight_takeoff
+                </i>
+              </span>
+              <p class="border-left-0 border border-primary  location  text-muted col-md-4">Chennai, TamilNadu</p>
+              <img src="../../../../assets/flight-route.png" width="100" />
+              <span class="backgroundIcon">
+                <i class="material-icons">
+                  flight_land
+                </i>
+              </span>
+              <p class="border-left-0 border border-primary  location col-md-4 text-muted"> Trichy, TamilNadu </p>
+    
+              <i class="material-icons">
+                date_range
+              </i>
+    
+              <p class="location col-md-2 text-muted"> 15 Jul 2018 </p>
+            </mat-list-item>
+            <mat-list-item class="even-index">
+                <span class="backgroundIcon">
+                  <i class="material-icons">
+                    flight_takeoff
+                  </i>
+                </span>
+                <p class="border-left-0 border border-primary  location  text-muted col-md-4">Chennai, TamilNadu</p>
+                <img src="../../../../assets/flight-route.png" width="100" />
+                <span class="backgroundIcon">
+                  <i class="material-icons">
+                    flight_land
+                  </i>
+                </span>
+                <p class="border-left-0 border border-primary  location col-md-4 text-muted"> Trichy, TamilNadu </p>
+      
+                <i class="material-icons">
+                  date_range
+                </i>
+      
+                <p class="location col-md-2 text-muted"> 15 Jul 2018 </p>
+              </mat-list-item>
+              <mat-list-item class="odd-index">
+                  <span class="backgroundIcon">
+                    <i class="material-icons">
+                      flight_takeoff
+                    </i>
+                  </span>
+                  <p class="border-left-0 border border-primary  location  text-muted col-md-4">Chennai, TamilNadu</p>
+                  <img src="../../../../assets/flight-route.png" width="100" />
+                  <span class="backgroundIcon">
+                    <i class="material-icons">
+                      flight_land
+                    </i>
+                  </span>
+                  <p class="border-left-0 border border-primary  location col-md-4 text-muted"> Trichy, TamilNadu </p>
+        
+                  <i class="material-icons">
+                    date_range
+                  </i>
+        
+                  <p class="location col-md-2 text-muted"> 15 Jul 2018 </p>
+                </mat-list-item>
+                <mat-list-item class="even-index">
+                    <span class="backgroundIcon">
+                      <i class="material-icons">
+                        flight_takeoff
+                      </i>
+                    </span>
+                    <p class="border-left-0 border border-primary  location  text-muted col-md-4">Chennai, TamilNadu</p>
+                    <img src="../../../../assets/flight-route.png" width="100" />
+                    <span class="backgroundIcon">
+                      <i class="material-icons">
+                        flight_land
+                      </i>
+                    </span>
+                    <p class="border-left-0 border border-primary  location col-md-4 text-muted"> Trichy, TamilNadu </p>
+          
+                    <i class="material-icons">
+                      date_range
+                    </i>
+          
+                    <p class="location col-md-2 text-muted"> 15 Jul 2018 </p>
+                  </mat-list-item>
+                  <mat-list-item class="odd-index">
+                      <span class="backgroundIcon">
+                        <i class="material-icons">
+                          flight_takeoff
+                        </i>
+                      </span>
+                      <p class="border-left-0 border border-primary  location  text-muted col-md-4">Chennai, TamilNadu</p>
+                      <img src="../../../../assets/flight-route.png" width="100" />
+                      <span class="backgroundIcon">
+                        <i class="material-icons">
+                          flight_land
+                        </i>
+                      </span>
+                      <p class="border-left-0 border border-primary  location col-md-4 text-muted"> Trichy, TamilNadu </p>
+            
+                      <i class="material-icons">
+                        date_range
+                      </i>
+            
+                      <p class="location col-md-2 text-muted"> 15 Jul 2018 </p>
+                    </mat-list-item>
+                    <mat-list-item class="even-index">
+                        <span class="backgroundIcon">
+                          <i class="material-icons">
+                            flight_takeoff
+                          </i>
+                        </span>
+                        <p class="border-left-0 border border-primary  location  text-muted col-md-4">Chennai, TamilNadu</p>
+                        <img src="../../../../assets/flight-route.png" width="100" />
+                        <span class="backgroundIcon">
+                          <i class="material-icons">
+                            flight_land
+                          </i>
+                        </span>
+                        <p class="border-left-0 border border-primary  location col-md-4 text-muted"> Trichy, TamilNadu </p>
+              
+                        <i class="material-icons">
+                          date_range
+                        </i>
+              
+                        <p class="location col-md-2 text-muted"> 15 Jul 2018 </p>
+                      </mat-list-item>
+                      <mat-list-item class="odd-index">
+                          <span class="backgroundIcon">
+                            <i class="material-icons">
+                              flight_takeoff
+                            </i>
+                          </span>
+                          <p class="border-left-0 border border-primary  location  text-muted col-md-4">Chennai, TamilNadu</p>
+                          <img src="../../../../assets/flight-route.png" width="100" />
+                          <span class="backgroundIcon">
+                            <i class="material-icons">
+                              flight_land
+                            </i>
+                          </span>
+                          <p class="border-left-0 border border-primary  location col-md-4 text-muted"> Trichy, TamilNadu </p>
+                
+                          <i class="material-icons">
+                            date_range
+                          </i>
+                
+                          <p class="location col-md-2 text-muted"> 15 Jul 2018 </p>
+                        </mat-list-item>
+                        <mat-list-item class="even-index">
+                            <span class="backgroundIcon">
+                              <i class="material-icons">
+                                flight_takeoff
+                              </i>
+                            </span>
+                            <p class="border-left-0 border border-primary  location  text-muted col-md-4">Chennai, TamilNadu</p>
+                            <img src="../../../../assets/flight-route.png" width="100" />
+                            <span class="backgroundIcon">
+                              <i class="material-icons">
+                                flight_land
+                              </i>
+                            </span>
+                            <p class="border-left-0 border border-primary  location col-md-4 text-muted"> Trichy, TamilNadu </p>
+                  
+                            <i class="material-icons">
+                              date_range
+                            </i>
+                  
+                            <p class="location col-md-2 text-muted"> 15 Jul 2018 </p>
+                          </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+  </mat-card>
+
+</div>

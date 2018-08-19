@@ -1,0 +1,579 @@
+<div class="container-fluid bg-img">
+  <img src="../../../../assets/chennai-airport.jpg"  class="img-fluid w-100" alt="Responsive image">
+
+  <img src="../../../../assets/snowy-3.svg" class="weather" width="150" height="150" />
+  <div id="clock">
+    <p class="date">11 Aug 2018</p>
+    <p class="time">12:43:00</p>
+    <!-- <p class="text">DIGITAL CLOCK with Vue.js</p> -->
+  </div>
+</div>
+<div class="clearfix">
+  <button mat-fab color="accent" class="position-relative _mt-15 mr-1 float-right" (click)="ngxSmartModalService.getModal('flights').open()">
+    <i class="material-icons">
+      flight
+    </i>
+  </button>
+
+  <button mat-fab color="accent" class="position-relative _mt-15 mr-1 float-right" (click)="ngxSmartModalService.getModal('map').open()">
+    <i class="material-icons">
+      directions
+    </i>
+  </button>
+  <button mat-fab color="accent" class="position-relative _mt-15 mr-1 float-right">
+    <i class="material-icons">
+      favorite
+    </i>
+  </button>
+
+</div>
+
+<div class="container shadow p-3 mb-5 bg-white rounded">
+  <mat-toolbar class="border pacifico text-primary">Tranportation</mat-toolbar>
+  <div class="row scrolling-wrapper-flexbox pb-3 mb-5">
+    <div class="card col-xs-3 ml-3 mr-3">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Heading</mat-card-title>
+          <mat-card-subtitle>discription</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <div class="card col-xs-3 ml-3 mr-3">
+      <mat-card class="example-card">
+        <mat-card-header>
+
+          <mat-card-title>Heading</mat-card-title>
+          <mat-card-subtitle>discription</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <div class="card col-xs-3 ml-3 mr-3">
+      <mat-card class="example-card">
+        <mat-card-header>
+
+          <mat-card-title>Heading</mat-card-title>
+          <mat-card-subtitle>discription</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <div class="card col-xs-3 ml-3 mr-3">
+      <mat-card class="example-card">
+        <mat-card-header>
+
+          <mat-card-title>Heading</mat-card-title>
+          <mat-card-subtitle>discription</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+
+  <mat-toolbar class="border pacifico text-primary mb-5">Hotels & Restaurants</mat-toolbar>
+  <div class="row scrolling-wrapper-flexbox pb-3">
+    <div class="card col-xs-3 ml-3 mr-3">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Heading</mat-card-title>
+          <mat-card-subtitle>discription</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <div class="card col-xs-3 ml-3 mr-3">
+      <mat-card class="example-card">
+        <mat-card-header>
+
+          <mat-card-title>Heading</mat-card-title>
+          <mat-card-subtitle>discription</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <div class="card col-xs-3 ml-3 mr-3">
+      <mat-card class="example-card">
+        <mat-card-header>
+
+          <mat-card-title>Heading</mat-card-title>
+          <mat-card-subtitle>discription</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <div class="card col-xs-3 ml-3 mr-3">
+      <mat-card class="example-card">
+        <mat-card-header>
+
+          <mat-card-title>Heading</mat-card-title>
+          <mat-card-subtitle>discription</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+
+
+  <div class="container shadow p-3 mb-5 bg-white rounded">
+      <mat-toolbar class="border pacifico text-primary">Tranportation</mat-toolbar>
+      <div class="row scrolling-wrapper-flexbox pb-3 mb-5">
+        <div class="card col-xs-3 ml-3 mr-3">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>Heading</mat-card-title>
+              <mat-card-subtitle>discription</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+        <div class="card col-xs-3 ml-3 mr-3">
+          <mat-card class="example-card">
+            <mat-card-header>
+    
+              <mat-card-title>Heading</mat-card-title>
+              <mat-card-subtitle>discription</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+        <div class="card col-xs-3 ml-3 mr-3">
+          <mat-card class="example-card">
+            <mat-card-header>
+    
+              <mat-card-title>Heading</mat-card-title>
+              <mat-card-subtitle>discription</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+        <div class="card col-xs-3 ml-3 mr-3">
+          <mat-card class="example-card">
+            <mat-card-header>
+    
+              <mat-card-title>Heading</mat-card-title>
+              <mat-card-subtitle>discription</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+    
+      <mat-toolbar class="border pacifico text-primary mb-5">Coffee & Snacks</mat-toolbar>
+      <div class="row scrolling-wrapper-flexbox pb-3">
+        <div class="card col-xs-3 ml-3 mr-3">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>Heading</mat-card-title>
+              <mat-card-subtitle>discription</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+        <div class="card col-xs-3 ml-3 mr-3">
+          <mat-card class="example-card">
+            <mat-card-header>
+    
+              <mat-card-title>Heading</mat-card-title>
+              <mat-card-subtitle>discription</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+        <div class="card col-xs-3 ml-3 mr-3">
+          <mat-card class="example-card">
+            <mat-card-header>
+    
+              <mat-card-title>Heading</mat-card-title>
+              <mat-card-subtitle>discription</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+        <div class="card col-xs-3 ml-3 mr-3">
+          <mat-card class="example-card">
+            <mat-card-header>
+    
+              <mat-card-title>Heading</mat-card-title>
+              <mat-card-subtitle>discription</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+ 
+      <div class="container shadow p-3 mb-5 bg-white rounded">
+          <mat-toolbar class="border pacifico text-primary">Tranportation</mat-toolbar>
+          <div class="row scrolling-wrapper-flexbox pb-3 mb-5">
+            <div class="card col-xs-3 ml-3 mr-3">
+              <mat-card class="example-card">
+                <mat-card-header>
+                  <mat-card-title>Heading</mat-card-title>
+                  <mat-card-subtitle>discription</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+                <mat-card-actions>
+                  <button mat-button>LIKE</button>
+                  <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+                </mat-card-actions>
+              </mat-card>
+            </div>
+            <div class="card col-xs-3 ml-3 mr-3">
+              <mat-card class="example-card">
+                <mat-card-header>
+        
+                  <mat-card-title>Heading</mat-card-title>
+                  <mat-card-subtitle>discription</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+                <mat-card-actions>
+                  <button mat-button>LIKE</button>
+                  <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+                </mat-card-actions>
+              </mat-card>
+            </div>
+            <div class="card col-xs-3 ml-3 mr-3">
+              <mat-card class="example-card">
+                <mat-card-header>
+        
+                  <mat-card-title>Heading</mat-card-title>
+                  <mat-card-subtitle>discription</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+                <mat-card-actions>
+                  <button mat-button>LIKE</button>
+                  <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+                </mat-card-actions>
+              </mat-card>
+            </div>
+            <div class="card col-xs-3 ml-3 mr-3">
+              <mat-card class="example-card">
+                <mat-card-header>
+        
+                  <mat-card-title>Heading</mat-card-title>
+                  <mat-card-subtitle>discription</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+                <mat-card-actions>
+                  <button mat-button>LIKE</button>
+                  <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+                </mat-card-actions>
+              </mat-card>
+            </div>
+          </div>
+        
+          <mat-toolbar class="border pacifico text-primary mb-5">Shopping</mat-toolbar>
+          <div class="row scrolling-wrapper-flexbox pb-3">
+            <div class="card col-xs-3 ml-3 mr-3">
+              <mat-card class="example-card">
+                <mat-card-header>
+                  <mat-card-title>Heading</mat-card-title>
+                  <mat-card-subtitle>discription</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+                <mat-card-actions>
+                  <button mat-button>LIKE</button>
+                  <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+                </mat-card-actions>
+              </mat-card>
+            </div>
+            <div class="card col-xs-3 ml-3 mr-3">
+              <mat-card class="example-card">
+                <mat-card-header>
+        
+                  <mat-card-title>Heading</mat-card-title>
+                  <mat-card-subtitle>discription</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+                <mat-card-actions>
+                  <button mat-button>LIKE</button>
+                  <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+                </mat-card-actions>
+              </mat-card>
+            </div>
+            <div class="card col-xs-3 ml-3 mr-3">
+              <mat-card class="example-card">
+                <mat-card-header>
+        
+                  <mat-card-title>Heading</mat-card-title>
+                  <mat-card-subtitle>discription</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+                <mat-card-actions>
+                  <button mat-button>LIKE</button>
+                  <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+                </mat-card-actions>
+              </mat-card>
+            </div>
+            <div class="card col-xs-3 ml-3 mr-3">
+              <mat-card class="example-card">
+                <mat-card-header>
+        
+                  <mat-card-title>Heading</mat-card-title>
+                  <mat-card-subtitle>discription</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+                <mat-card-actions>
+                  <button mat-button>LIKE</button>
+                  <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+                </mat-card-actions>
+              </mat-card>
+            </div>
+          </div>
+ 
+          <div class="container shadow p-3 mb-5 bg-white rounded">
+              <mat-toolbar class="border pacifico text-primary">Tranportation</mat-toolbar>
+              <div class="row scrolling-wrapper-flexbox pb-3 mb-5">
+                <div class="card col-xs-3 ml-3 mr-3">
+                  <mat-card class="example-card">
+                    <mat-card-header>
+                      <mat-card-title>Heading</mat-card-title>
+                      <mat-card-subtitle>discription</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+                    <mat-card-actions>
+                      <button mat-button>LIKE</button>
+                      <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+                    </mat-card-actions>
+                  </mat-card>
+                </div>
+                <div class="card col-xs-3 ml-3 mr-3">
+                  <mat-card class="example-card">
+                    <mat-card-header>
+            
+                      <mat-card-title>Heading</mat-card-title>
+                      <mat-card-subtitle>discription</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+                    <mat-card-actions>
+                      <button mat-button>LIKE</button>
+                      <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+                    </mat-card-actions>
+                  </mat-card>
+                </div>
+                <div class="card col-xs-3 ml-3 mr-3">
+                  <mat-card class="example-card">
+                    <mat-card-header>
+            
+                      <mat-card-title>Heading</mat-card-title>
+                      <mat-card-subtitle>discription</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+                    <mat-card-actions>
+                      <button mat-button>LIKE</button>
+                      <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+                    </mat-card-actions>
+                  </mat-card>
+                </div>
+                <div class="card col-xs-3 ml-3 mr-3">
+                  <mat-card class="example-card">
+                    <mat-card-header>
+            
+                      <mat-card-title>Heading</mat-card-title>
+                      <mat-card-subtitle>discription</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+                    <mat-card-actions>
+                      <button mat-button>LIKE</button>
+                      <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+                    </mat-card-actions>
+                  </mat-card>
+                </div>
+              </div>
+            
+              <mat-toolbar class="border pacifico text-primary mb-5">Lounges</mat-toolbar>
+              <div class="row scrolling-wrapper-flexbox pb-3">
+                <div class="card col-xs-3 ml-3 mr-3">
+                  <mat-card class="example-card">
+                    <mat-card-header>
+                      <mat-card-title>Heading</mat-card-title>
+                      <mat-card-subtitle>discription</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+                    <mat-card-actions>
+                      <button mat-button>LIKE</button>
+                      <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+                    </mat-card-actions>
+                  </mat-card>
+                </div>
+                <div class="card col-xs-3 ml-3 mr-3">
+                  <mat-card class="example-card">
+                    <mat-card-header>
+            
+                      <mat-card-title>Heading</mat-card-title>
+                      <mat-card-subtitle>discription</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+                    <mat-card-actions>
+                      <button mat-button>LIKE</button>
+                      <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+                    </mat-card-actions>
+                  </mat-card>
+                </div>
+                <div class="card col-xs-3 ml-3 mr-3">
+                  <mat-card class="example-card">
+                    <mat-card-header>
+            
+                      <mat-card-title>Heading</mat-card-title>
+                      <mat-card-subtitle>discription</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+                    <mat-card-actions>
+                      <button mat-button>LIKE</button>
+                      <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+                    </mat-card-actions>
+                  </mat-card>
+                </div>
+                <div class="card col-xs-3 ml-3 mr-3">
+                  <mat-card class="example-card">
+                    <mat-card-header>
+            
+                      <mat-card-title>Heading</mat-card-title>
+                      <mat-card-subtitle>discription</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="../../../../assets/dummy.jpg" alt="Photo of a Heading">
+                    <mat-card-actions>
+                      <button mat-button>LIKE</button>
+                      <button mat-button (click)="ngxSmartModalService.getModal('more').open()">MORE</button>
+                    </mat-card-actions>
+                  </mat-card>
+                </div>
+              </div>
+            
+
+
+
+  <ul class="comment-section">
+
+    <li class="comment user-comment">
+      <div class="info">
+        <a href="#">Anie Silverston</a>
+        <span>4 hours ago</span>
+      </div>
+      <a class="avatar" href="#">
+        <img src="../../../../assets/avatar_user_1.jpg" width="35" alt="Profile Avatar" title="Anie Silverston" />
+      </a>
+      <p>Suspendisse gravida sem?</p>
+    </li>
+
+    <li class="comment author-comment">
+      <div class="info">
+        <a href="#">Jack Smith</a>
+        <span>3 hours ago</span>
+      </div>
+      <a class="avatar" href="#">
+        <img src="../../../../assets/avatar_user_2.jpg" width="35" alt="Profile Avatar" title="Jack Smith" />
+      </a>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida sem sit amet molestie portitor.</p>
+
+    </li>
+
+    <!-- More comments -->
+
+    <li class="write-new">
+
+      <form method="post">
+        <mat-form-field class="comment-textarea w-50">
+          <textarea matInput placeholder="Leave a comment"></textarea>
+        </mat-form-field>
+
+        <div>
+          <!-- <img src="../../../../assets/avatar_user_1.jpg" width="35" alt="Profile of Bradley Jones" title="Bradley Jones" /> -->
+          <button mat-flat-button color="primary" routerLink=".">Submit</button>
+        </div>
+      </form>
+
+    </li>
+
+  </ul>
+
+
+
+</div>
+
+
+<ngx-smart-modal #flights identifier="flights">
+  <div class="container">
+    <img src="../../../../assets/flight-timings.png" class="img-fluid w-100">
+  </div>
+</ngx-smart-modal>
+<ngx-smart-modal #map identifier="map">
+  <div class="container">
+    <img src="../../../../assets/map.png" class="img-fluid w-100">
+  </div>
+</ngx-smart-modal>
+<ngx-smart-modal #more identifier="more">
+  <div class="parentcontainer">
+    <section class="our-work">
+      <h3 class="title">Some of our work</h3>
+      <hr>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar
+        velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
+    </section>
+  </div>
+</ngx-smart-modal>
